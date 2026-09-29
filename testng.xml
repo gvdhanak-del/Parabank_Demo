@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="MySuite">
+
+	<listeners>
+		<listener class-name= "com.tcs.testng.ListenersClass"/>
+	</listeners>
+  <test name="MyTest">
+  
+  <parameter name= "userid" value="Tom"></parameter>
+  <parameter name= "pass" value="Tom@123"></parameter>
+  <parameter name= "fname" value="Jerry"></parameter>
+  
+  <!--<groups>
+  <run>
+  <include name="abc"></include>
+  </run>
+  </groups>-->
+  
+    <classes>
+      <class name="com.tcs.testng.DemoTest"/>
+      <class name="com.tcs.testng.BasicTestNg">
+      
+      <!--<methods>
+      	<include name="dataSupply"></include>
+      </methods>-->
+      
+      </class>
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
